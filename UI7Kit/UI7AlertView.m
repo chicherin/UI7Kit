@@ -147,9 +147,9 @@ NSAPropertyRetainSetter(setBackgroundImageView, @"_backgroundImageView")
     for (NSUInteger index = 0; index < buttons.count; index++) {
         UIButton *button = buttons[index];
         if (button == cancelButton) {
-            button.titleLabel.font = [UI7Font systemFontOfSize:16.0 attribute:UI7FontAttributeMedium];
+          button.titleLabel.font = [UI7Font systemFontOfSize:16.0 attribute:UI7FontAttributeLight];
         } else {
-            button.titleLabel.font = [UI7Font systemFontOfSize:16.0 attribute:UI7FontAttributeLight];
+          button.titleLabel.font = [UI7Font systemFontOfSize:16.0 attribute:UI7FontAttributeMedium];
         }
         [button setTitleColor:[UI7Color defaultTintColor] forState:UIControlStateNormal];
         [button setTitleColor:[UI7Color defaultTintColor].highligtedColor forState:UIControlStateHighlighted];
